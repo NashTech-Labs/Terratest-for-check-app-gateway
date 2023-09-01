@@ -21,7 +21,7 @@ var (
 
 
 
-func TestAppGateway(t *testing.T) {
+func TestAppGatewayMK(t *testing.T) {
 
 	accessToken, err := accessToken()
 	if err != nil {
@@ -41,7 +41,7 @@ func TestAppGateway(t *testing.T) {
 
 
 
-func accessToken() (string, error) {
+func accessTokenMK() (string, error) {
 	cmd := exec.Command("az", "account", "get-access-token", "--query", "accessToken", "--output", "tsv")
 	output, err := cmd.Output()
 	if err != nil {
@@ -53,7 +53,7 @@ func accessToken() (string, error) {
 
 
 
-func checkApplicationGatewayExists(subscriptionID, resourceGroupName, applicationGatewayName, accessToken string) (bool, error) {
+func checkGatewayExistsMK(subscriptionID, resourceGroupName, applicationGatewayName, accessToken string) (bool, error) {
 	url := fmt.Sprintf("https://management.azure.com/subscriptions/%s/resourceGroups/%s/providers/Microsoft.Network/applicationGateways/%s?api-version=2019-09-01",
 		subscriptionID, resourceGroupName, applicationGatewayName)
 
