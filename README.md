@@ -6,9 +6,9 @@
 
 ### Step 1: You need to add your own values in these varibles.
 
-            	subscriptionID = "< >"
-                resourceGroupName = "< >"
-                appGatewayName = "< >"
+        subscriptionID = "< >"
+        resourceGroupName = "< >"
+        appGatewayName = "< >"
 
 ### Step 2: You need to run few commands to run the terratest:-
 
