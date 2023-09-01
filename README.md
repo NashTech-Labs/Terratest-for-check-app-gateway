@@ -1,4 +1,4 @@
-# Terratest to check the existence of the Application gateway.
+# Terratest to check the existence of the App Gateway.
 
 ## With the help of this template, you can run the terratest to check or test the application gateway existence on your azure account.
 
